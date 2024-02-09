@@ -1,0 +1,128 @@
+.circle19 {
+  height: 19px;
+  width: 19px;
+}
+
+.titleColor {
+  color: #333333;
+}
+
+.titleColor2 {
+  color: #3a3a3a;
+}
+
+//nav漢堡選單設定
+
+@media (max-width: 992px) {
+  .collapse.show ul .nav-item,
+  .collapsing ul .nav-item {
+    a {
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid $gray-400;
+    }
+    button {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+//index-banner
+.banner_img {
+  width: 100%;
+  height: 627px;
+  background-image: url(/image/home_bg.jpg);
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.navFloat {
+  position: relative;
+}
+
+.letterSpecing1 {
+  letter-spacing: 2.8px;
+}
+
+.letterSpecing2 {
+  letter-spacing: 0.93px;
+}
+
+@media (max-width: 992px) {
+  .banner_img {
+    height: 545px;
+  }
+
+  .navFloat {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+//index-you have troble
+.trobleBG {
+  background-image: url(/image/bg_paper.png);
+}
+
+//index-plan cost
+.planImg {
+  height: 155px;
+  object-fit: contain;
+}
+
+.pricePosition {
+  top: 185px;
+}
+
+//footer
+.footerAria {
+  padding: 0 calc((100vw - 828px) / 2);
+}
+
+.footerCard {
+  width: 260px;
+}
+
+.CardHover {
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+//page planpay
+
+.pay_titleBG {
+  background-image: url(/image/bg_paper.png);
+}
+
+.cardWidth {
+  max-width: 735px;
+}
+
+.brRWD {
+  display: inline;
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.cardRWD {
+  @media (max-width: 576px) {
+    box-shadow: none;
+  }
+}
+
+//question arrodion change color
+.accordionBLUE {
+  &:not(.collapsed) {
+    color: #0c63e4;
+    background-color: #e7f1ff;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(#0c63e4, 0.25);
+  }
+}

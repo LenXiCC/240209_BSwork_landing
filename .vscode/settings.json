@@ -1,0 +1,4 @@
+{
+  "editor.formatOnSave": true,
+  "css.styleSheets": ["node_modules/bootstrap/dist/css/bootstrap.css", "src/**/*.scss", "stylesheet/**/*.scss"]
+}
